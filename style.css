@@ -126,7 +126,7 @@ body {
 
   .container-flex {
     display: flex;
-    gap: 30px;
+    gap: 24px;
     overflow-x: auto;
   }
 
@@ -146,21 +146,34 @@ body {
     position: relative;
     flex-shrink: 0;
     margin-left: 20px;
+    animation-name: card-animation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes card-animation {
+    0% {
+      transform: translate(0%);
+    }
+    100% {
+      transform: translate(-900%);
+    }
   }
   .card-img {
     width: 100%;
     border-radius: 10px;
+    object-fit: cover;
   }
 
   .card:hover {
-    transform: scale(1.1);
     cursor: pointer;
   }
 
   .svg {
     position: absolute;
-    bottom: 20px;
-    left: -20px;
+    bottom: -10px;
+    left: -50px;
   }
 
   .card-2 {
@@ -403,21 +416,34 @@ body {
     position: relative;
     flex-shrink: 0;
     margin-left: 20px;
+    animation-name: card-animation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
+  @keyframes card-animation {
+    0% {
+      transform: translate(0%);
+    }
+    100% {
+      transform: translate(-900%);
+    }
+  }
+
   .card-img {
     width: 100%;
     border-radius: 10px;
+    object-fit: cover;
   }
 
   .card:hover {
-    transform: scale(1.1);
     cursor: pointer;
   }
 
   .svg {
     position: absolute;
-    bottom: 20px;
-    left: -20px;
+    bottom: -10px;
+    left: -40px;
   }
 
   .card-2 {
@@ -479,6 +505,7 @@ body {
   }
   .last {
     width: fit-content;
+    margin-top: 60px;
   }
 
   .footer-flex {
@@ -672,21 +699,34 @@ body {
     position: relative;
     flex-shrink: 0;
     margin-left: 20px;
+    animation-name: card-animation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
   .card-img {
     width: 100%;
     border-radius: 10px;
+    object-fit: cover;
+  }
+
+  @keyframes card-animation {
+    0% {
+      transform: translate(0%);
+    }
+    100% {
+      transform: translate(-900%);
+    }
   }
 
   .card:hover {
-    transform: scale(1.1);
     cursor: pointer;
   }
 
   .svg {
     position: absolute;
-    bottom: 20px;
-    left: -20px;
+    bottom: -10px;
+    left: -50px;
   }
 
   .card-2 {
@@ -926,21 +966,33 @@ body {
     position: relative;
     flex-shrink: 0;
     margin-left: 20px;
+    animation-name: card-animation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
   .card-img {
     width: 100%;
     border-radius: 10px;
+    object-fit: cover;
   }
 
   .card:hover {
-    transform: scale(1.1);
     cursor: pointer;
+  }
+  @keyframes card-animation {
+    0% {
+      transform: translate(0%);
+    }
+    100% {
+      transform: translate(-900%);
+    }
   }
 
   .svg {
     position: absolute;
-    bottom: 20px;
-    left: -20px;
+    bottom: -10px;
+    left: -50px;
   }
 
   .card-2 {
